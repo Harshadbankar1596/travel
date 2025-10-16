@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar-gradient {
+    @apply bg-gradient-to-r from-[#0072ff] to-[#7b2ff7];
+  }
+  
+  .btn-warning {
+    @apply bg-[#FFD43B] border-none transition-all duration-300 hover:bg-[#f8c700] hover:-translate-y-0.5;
+  }
+  
+  .destination-card, .package-card {
+    @apply border-none rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2;
+  }
+  
+  .section-title {
+    @apply font-bold text-center mb-8 relative text-gray-800;
+  }
+  
+  .section-title::after {
+    content: "";
+    @apply block w-16 h-1 mx-auto mt-2 bg-gradient-to-r from-[#0072ff] to-[#7b2ff7] rounded;
+  }
+}
