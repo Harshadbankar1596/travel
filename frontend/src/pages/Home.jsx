@@ -70,15 +70,15 @@ const Home = () => {
             <input
               type="text"
               placeholder="Destination"
-              className="form-control max-w-xs"
+              className="bg-black form-control color-white"
               {...register("destination")}
             />
             <input
               type="date"
-              className="form-control max-w-xs"
+              className=" bg-black form-control max-w-xs"
               {...register("date")}
             />
-            <select className="form-control max-w-xs" {...register("travelers")}>
+            <select className="form-control bg-black max-w-xs" {...register("travelers")}>
               <option>1 Traveler</option>
               <option>2 Travelers</option>
               <option>3+ Travelers</option>
